@@ -1,2 +1,2 @@
 # QM-L3-PHY
-quantum mechanics le physics, uga, 2024
+quantum mechanics l3 physics, uga, 2024
