@@ -833,3 +833,337 @@ où $g_0$ \= facteur gyromag de l’é$^-$
 $H = H_0 + \frac{|e|}{m_e} \vec{S} \cdot \vec{B}$​**$S^+$**
 
 **est un opérateur vectoriel défini dans un espace de dim. 4 ayant 3 composantes dans l'espace réel.**
+
+
+## Part V) Propriétés ondulatoires de la matière
+
+‍
+
+### V.1) Onde de De Broglie
+
+‍
+
+* Lumière $\Rightarrow$ photon et onde EM $\Rightarrow$ idem matière $\Rightarrow$ fonction d'onde $\Psi(\vec{x},t)$
+
+‍
+
+  
+
+$$
+E = \hbar \omega
+$$
+
+$$
+p = \hbar k = \frac{h}{\lambda}
+$$
+
+‍
+
+Ou:
+
+‍
+
+$$
+\left\{\begin{array}{l}
+E=E_c+E_p \\
+p_x=\frac{\partial L}{\partial \dot{x}}
+\end{array}\right.
+$$
+
+‍
+
+Si:
+
+$$
+E = \frac{p^2}{2m} + V(x) \Rightarrow ||\vec{p}(x)|| = \sqrt{2m (E - V(x))}
+$$
+
+‍
+
+​![image](assets/image-20250221230119-4yak7dj.png)​
+
+‍
+
+* **Comportement ondulatoire** ⟺ $\lambda \sim$ échelle caractéristique de $\vec{\nabla V}$  
+  ⟹ réflexion, réfraction, interférences
+
+‍
+
+* **Comportement corpusculaire (limite classique)**    
+  ​$\lambda \ll$ échelle de $\vec{\nabla V}$
+
+​![image](assets/image-20250221230249-vi90i7p.png)​
+
+‍
+
+* **Analogie optique ondulatoire ↔ géométrique**
+
+‍
+
+* **Trajectoire Newtonienne guidée par** **$|\Psi|^2$**
+
+  
+
+###### **Interprétation de la règle de Bohr-Sommerfeld :**
+
+‍
+
+*approche semi-classique : trajectoire classique + phase ondulatoire*
+
+‍
+
+​![image](assets/image-20250221230532-yiird7t.png)​
+
+‍
+
+$$
+\Delta \varphi_{A \to B} = \int_{A}^{B} \vec{P}_\hbar \cdot d\vec{r}
+$$
+
+‍
+
+‍
+
+**Orbitale atomique : interfér constructives pour orbites stables**
+
+$$
+\Delta \varphi_{1 \, \text{orbite}} = \oint \vec{P}_\hbar \cdot d\vec{r} = 2n\pi \quad \text{où} \quad n \in \mathbb{N}^*
+$$
+
+donc
+
+$$
+\Rightarrow \oint \vec{p} \cdot d\vec{r} = n h
+$$
+
+### V.2) Notion de paquet d'ondes
+
+**Paquet d'ondes**  **=**  **superposition continue d'ondes planes sinusoïdales de** **$f$**   **proches centrées autour d'une valeur** **$f_0$**​ **.**
+
+→ *décrit une particule* *$\sim$* *localisée dans l'espace.*
+
+> p.s.
+>
+> Pour cette partie, on peut utilise la livre de reference
+>
+> *Quantum Mechanics,*  by Claude Cohen-Tanoudji
+>
+> Volumne 1, chapitre 1, part C: Quantum description of a partical. Wave packets.
+>
+> Je utilise le version en Anglais, mais il y a version francaise (en effet, francaise est la version original)
+>
+> The Wiley-VCH version of this part is around page 14. Other versions may be different but still easy to find
+
+‍
+
+On appelle $\Phi(p)$la dostrobution des $p = \hbar k$ du paquet d'ondes
+
+‍
+
+​![image](assets/image-20250221230942-wiq4o83.png)​
+
+**On obtient la fonction d’onde dans l’espace réel** **$\Psi(x,t)$** **par TF :**
+
+$$
+\Psi(x,t) = \int_{-\infty}^{+\infty} \Phi(p) e^{i(kx - \omega t)} dp = \int_{-\infty}^{+\infty} \Phi(p) e^{i \frac{(px - E(p)t)}{\hbar}} dp
+$$
+
+‍
+
+‍
+
+> **Annotations en bleu :**
+>
+> * et on utilise **DL** (développement limité) pour cette partie
+>
+>   $$
+>   e^{i \frac{(px - E(p)t)}{\hbar}}
+>   $$
+>
+> * et on a :
+>
+>   $$
+>   E(p) = E_{p_0} + (p - p_0) \frac{dE}{dp}(p_0)
+>   $$
+
+‍
+
+et l'equation devient:
+
+$$
+= e^{i \frac{(p_0 x - E(p_0)t)}{\hbar}} \int_{-\infty}^{+\infty} \Phi(p) e^{i \left[ (p - p_0)x - \frac{dE}{dp}(p_0)(p - p_0)t \right]/\hbar} dp
+$$
+
+‍
+
+en fin, on a 
+
+$$
+= e^{i \frac{(p_0 x - E(p_0)t)}{\hbar}} \int_{-\infty}^{+\infty} \Phi(dp) e^{i \frac{\left[ x - v_g t \right] \delta p}{\hbar}} d\delta p
+$$
+
+note: ici ,$\delta p=p-p_0$
+
+‍
+
+$$
+=e^{i \frac{\left(p_0 x-E\left(p_0\right) t\right)}{\hbar}} \hat{\Phi}_0\left(x-v_g t\right)
+$$
+
+‍
+
+1. $e^{i \frac{\left(p_0 x-E\left(p_0\right) t\right)}{\hbar}}$ : porteur à $p_0$
+2. $\hat{\Phi}_0\left(x-v_g t\right)$: enveloppe $=T F$ de $\Phi$ centrée en $p_0$
+
+‍
+
+$$
+\Rightarrow \text { vitesse de groupe } \quad v_g=\frac{d E}{d p}\left(p_0\right)
+$$
+
+​![image](assets/image-20250221232642-k77u7hs.png)​
+
+‍
+
+##### Vitesse du paquet d'ondes
+
+‍
+
+###### Particule liber
+
+$$
+\begin{gathered}
+E=\frac{P^2}{2 m} \\
+v_{\text {phase }}=\frac{\omega}{k}=\frac{E}{p}=\frac{P}{2 m} \\
+v_{\text {groupe }}=\frac{d \omega}{d k}=\frac{d E}{d p}=\frac{P}{m} \quad \text { idem classique }
+\end{gathered}
+$$
+
+###### Potentiel
+
+$$
+\begin{gathered}
+E=\frac{p^2}{2 m}+V(\vec{x}) \\
+v_g=\frac{P}{m} \quad \text { idem classique }
+\end{gathered}
+$$
+
+‍
+
+###### Sous champ
+
+$$
+\begin{gathered}
+E=\frac{(\vec{p}-e \vec{A})^2}{2 m}+V(\vec{x}) \\
+\Rightarrow v_{g x}=\frac{P_x-e A_x}{m}=\dot{x}=\frac{d x}{d t}
+\end{gathered}
+$$
+
+> note:
+>
+> $$
+> \dot{q}=\frac{\partial \mathcal{H}}{\partial p}
+> $$
+>
+> idem classique
+
+‍
+
+##### Largeur du paquet d'onde
+
+​![image](assets/image-20250221233317-gso0n9d.png)​
+
+> *Quantum Mechanics,*  by Claude Cohen-Tanoudji
+>
+> Volumne 1, chapitre 1, part C: Quantum description of a partical. Wave packets.
+>
+> C-2. Form of the wave packet at a give time
+
+TF: $\Delta x \Delta k \geqslant \frac{1}{2} \Rightarrow \Delta x \Delta p \geqslant \frac{\hbar}{2}$
+
+Heisenbeng uncertainty
+
+‍
+
+##### **Étalement du paquet d'ondes :**
+
+ *(cas paquet d’ondes Gaussien* *$\Delta x \Delta p = \frac{\hbar}{2}$*​ *)*
+
+* **à** **$t = 0$**
+
+$\Delta p(0) \implies \Delta x(0) = \frac{\hbar}{2 \Delta p(0)}$
+
+‍
+
+* **à** **$t \to \infty$**, *découplage des composantes du paquet d’ondes. Qualitativement*
+
+$v_{min} = \frac{p_{min}}{m} \quad \text{et} \quad v_{max} = \frac{p_{max}}{m}$​$\Rightarrow \Delta x(t) \simeq (v_{max} - v_{min}) t \simeq \frac{\Delta p(0)}{m} t$
+
+‍
+
+$\Delta x(t) = \frac{\hbar}{2m \, \Delta x(0)} t \quad \text{cf TD 1.}$
+
+​![image](assets/image-20250225134135-6tfonuy.png)​
+
+‍
+
+### V.3) experience sur la dualite onde-corpuscule
+
+‍
+
+**IV.3) Expériences sur la dualité onde-corpuscule :**
+
+‍
+
+* **Diffraction d'e**​**$^-$** : 
+
+  Davisson et Germer (1927)  
+
+  GP Thomson (")
+
+---
+
+* **Interférences** :
+
+  Jönsson (1961)
+* Tonomura (1989) e$^-$ uniques
+
+---
+
+* **Diffrac° de neutrons (ILL)**
+
+‍
+
+‍
+
+### V.4) Développements ultérieurs de la MQ :
+
+**IV.4) Développements ultérieurs de la MQ :**
+
+---
+
+* **1925 :**  “méca des matrices” Heisenberg
+* **1926 :**  MQ ondulatoire Schrödinger
+* **1927 :**  interprétation probabiliste Born
+* **1928 :**  relativité et spin Dirac
+
+---
+
+**Années 30 :**
+
+* Bohr, formalisme général (Hilbert, Von Neumann)
+* Bosons, fermions, solides
+
+---
+
+**1965 :**  inégalités de Bell → variables cachées  
+**1982 :**  Aspect, violation exp. de Bell → réalité ? MQ et théorie ?
+
+---
+
+**De nos jours :**
+
+* Localité, causalité, etc.
+* États intriqués
+
+
