@@ -1115,7 +1115,7 @@ $\Delta x(t) = \frac{\hbar}{2m \, \Delta x(0)} t \quad \text{cf TD 1.}$
 
 ‍
 
-* **Diffraction d'e**​**$^-$** : 
+* **Diffraction d'$e^{-}$** : 
 
   Davisson et Germer (1927)  
 
@@ -1126,7 +1126,7 @@ $\Delta x(t) = \frac{\hbar}{2m \, \Delta x(0)} t \quad \text{cf TD 1.}$
 * **Interférences** :
 
   Jönsson (1961)
-* Tonomura (1989) e$^-$ uniques
+* Tonomura (1989) $e^-$ uniques
 
 ---
 
